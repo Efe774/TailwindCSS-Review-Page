@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS Review Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Navbar Kısmı -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center rounded-b-xl">
+        <div class="text-xl font-bold">Logo</div>
+        <div class="flex items-center space-x-4">
+            <input type="text" placeholder="Ara..." class="border-2 border-stone-950 rounded-full px-4 py-2 ">
+            <button class="bg-purple-600 text-white px-4 py-2 rounded-full border-2 hover:border-purple-600">Giriş</button>
+        </div>
+    </nav>
+    
+    <!-- Hero Bölmesi -->
+     <div class="bg-gray-300">
+    <section class="text-center py-16">
+        <h1 class="text-3xl font-bold mb-4">Review <span class="text-purple-600 font-bold">Sayfamıza </span>Hoşgeldiniz</h1>
+        <p class="m-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam sapiente repellendus perferendis ipsam. Quasi blanditiis amet vitae, eos ea ipsam et, aspernatur consequatur quisquam voluptates possimus quidem rerum nihil fuga.</p>
+        <div class="space-x-4">
+            <button class="bg-purple-600 text-white px-6 py-3 rounded-full border-2 hover:border-purple-600">Başlayalım</button>
+            <button class="bg-purple-500 text-white px-6 py-3 rounded-full mb-20 border-2 hover:border-purple-600">Daha Fazla</button>
+        </div>
+    </div>
+    </section>
+    
+    <!-- Reviews Bölmesi -->
+    <section class="grid grid-cols-2 gap-6 px-10 ">
+        <div class="bg-white p-6 rounded-xl shadow-md text-center relative flex flex-col items-center">
+            <p class="text-purple-600 text-2xl">&ldquo;</p>
+            <p class="text-gray-600 italic mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quae sunt, adipisci ratione ex impedit amet laborum! Dolorem ipsam perferendis non, fugiat explicabo optio dolorum cupiditate qui accusamus. Aperiam, natus.</p>
+            <div class="absolute -bottom-5 bg-gray-300 p-2 rounded-full">📷</div>
+            <div class="bg-purple-600 text-white w-full p-4 rounded-b-xl">
+                <p class="font-bold">Kullanıcı Adı</p>
+                <p class="text-xs">Kullanıcı Soyadı</p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center relative flex flex-col items-center">
+            <p class="text-purple-600 text-2xl">&ldquo;</p>
+            <p class="text-gray-600 italic mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur officia quod itaque, assumenda quibusdam et consequuntur ad alias qui? Ratione autem inventore architecto aliquam magnam quas accusamus, maxime laborum.</p>
+            <div class="absolute -bottom-5 bg-gray-300 p-2 rounded-full">📷</div>
+            <div class="bg-purple-600 text-white w-full p-4 rounded-b-xl">
+                <p class="font-bold">Kullanıcı Adı</p>
+                <p class="text-xs">Kullanıcı Soyadı</p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center relative flex flex-col items-center">
+            <p class="text-purple-600 text-2xl">&ldquo;</p>
+            <p class="text-gray-600 italic mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa perferendis nobis quasi explicabo porro. Rerum iste consequuntur placeat laboriosam nostrum sit laudantium quae quo, veritatis maiores aliquam eveniet hic saepe?</p>
+            <div class="absolute -bottom-5 bg-gray-300 p-2 rounded-full">📷</div>
+            <div class="bg-purple-600 text-white w-full p-4 rounded-b-xl">
+                <p class="font-bold">Kullanıcı Adı</p>
+                <p class="text-xs">Kullanıcı Soyadı</p>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md text-center relative flex flex-col items-center">
+            <p class="text-purple-600 text-2xl">&ldquo;</p>
+            <p class="text-gray-600 italic mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores facere rem sit quidem praesentium, nesciunt iste, similique mollitia magnam illum odit hic ratione voluptas distinctio delectus maxime. Atque, voluptatibus repellat!</p>
+            <div class="absolute -bottom-5 bg-gray-300 p-2 rounded-full">📷</div>
+            <div class="bg-purple-600 text-white w-full p-4 rounded-b-xl">
+                <p class="font-bold">Kullanıcı Adı</p>
+                <p class="text-xs">Kullanıcı Soyadı</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- İletişim Kısmı -->
+    <section class="text-center py-16 bg-gray-300">
+        <h2 class="text-2xl font-bold mb-4">Bizimle İletişime Geç</h2>
+        <form class="space-y-4 max-w-md mx-auto">
+            <div class="flex flex-col text-left">
+                <label for="name" class="text-gray-700 font-semibold">İsim</label>
+                <input required id="name" type="text" placeholder="İsim" class="w-full border p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+            <div class="flex flex-col text-left">
+                <label for="email" class="text-gray-700 font-semibold">Email</label>
+                <input required id="email" type="email" placeholder="Email" class="w-full border p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+            <div class="flex flex-col text-left">
+                <label for="message" class="text-gray-700 font-semibold">Mesajınız</label>
+                <textarea required id="message" placeholder="Mesajınız" class="w-full border p-2 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
+            </div>
+            <button class="bg-purple-600 text-white px-6 py-3 rounded-full border-2 hover:border-purple-600">Gönder</button>
+        </form>
+    </section>
+    
+    <!-- Footer Kısmı -->
+    <footer class="bg-white shadow-md p-6 flex justify-between rounded-t-xl">
+        <div class="space-x-4">
+            <a href="#" class="text-gray-600">Alışveriş</a>
+            <a href="#" class="text-gray-600">Hakkımızda</a>
+            <a href="#" class="text-gray-600">Blog</a>
+            <a href="#" class="text-gray-600">Ücret</a>
+            <a href="#" class="text-gray-600">İletişim</a>
+        </div>
+        <div class="flex space-x-2">
+            <span class="bg-gray-200 p-2 rounded-full">📷</span>
+            <span class="bg-gray-200 p-2 rounded-full">📌</span>
+            <span class="bg-gray-200 p-2 rounded-full">🐦</span>
+            <span class="bg-gray-200 p-2 rounded-full">📘</span>
+            <span class="bg-gray-200 p-2 rounded-full">🔍</span>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
